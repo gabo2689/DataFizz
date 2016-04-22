@@ -1,0 +1,33 @@
+Domains beyond Amazon.com
+- I will create "x" services to detect which page is requested(amazon, ebay, etc). Depending on the result,
+I would call the correct service that contains specific DOM parsing logic to web scrap it.
+For the service we can use Scala, C# or other language.
+For the scraping we can use the cheerio library.
+
+
+Products beyond just simply books.
+- if you need to detect information about product beyond the books, you need to know how is the structure for the DOM.
+for example if you need to get the price for the other products different to books and you can
+find in the similar part in the DOM, you can create a function where receives parameter this part of the DOM
+and return the information you need.
+for example if you search the price for book and the price you can find in
+<span id="priceblock_ourprice" class="a-size-medium a-color-price">$19.99</span>,
+you can find the price for other product in the same part of the DOM.
+
+
+Parse and ship 2,000,000 books (in a reasonably time frame; e.g., polynomial time) instead of merely 20.
+
+1.- For this part you can get the information about the books
+
+2.- save the information about the books in memory.
+
+3.- we need to sort the information for the books,
+for this part we can load this information in memory and sort for pounds in this case we can use QuickSort,
+we used memory because is more faster and we don't have call to read in hdd when loading the file.
+
+4.- Create a function where receive parameters the sorted books,
+in this part we can create boxes and put inside this boxes the books,
+we can set a limit for box for pound and if the pound the boxes is more the
+limit we create a new box for the next books, the all in loop to checked the pound for each book.
+
+All with the idea to send the all books inside boxes because is more to easy to load.
